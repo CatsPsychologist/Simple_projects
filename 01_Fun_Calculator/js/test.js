@@ -4,7 +4,7 @@ let operator = '';
 let finish = false;
 
 let numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
-let operation = ['÷', '×', '-', '+'];
+let operation = ['÷', '×', '-', '+', '+/-', '%'];
 
 const screen = document.querySelector('.screen p')
 // console.log(screen)
@@ -23,7 +23,7 @@ document.querySelector('.ac').onclick = clearAll;
 document.querySelector('.buttons').onclick = (event) => {
     if(!event.target.classList.contains('btn')) return;
     if(event.target.classList.contains('ac')) return;
-    if (screen.textContent === '0' && event.target.classList.contains('zero'))return;
+    // if (screen.textContent === '0' && event.target.classList.contains('zero') && event.target.classList.contains('orange'))return;
 
     // if(screen.textContent.length === 9){
     //     return;
@@ -57,8 +57,17 @@ document.querySelector('.buttons').onclick = (event) => {
         console.log(x, y, operator)
 
     }
+    if (operation.includes(key) && screen.textContent === '' && x === ''){
+        screen.textContent = '0'
+    }
 
     if(key === '='){
+
+        if (x === '' && y === ''){
+            screen.textContent = '0'
+            return;
+        }
+
         if (y === '') y = x;
 
         switch (operator){
@@ -85,7 +94,7 @@ document.querySelector('.buttons').onclick = (event) => {
         finish = true;
         screen.textContent = x;
         console.log(x, y, operator)
-s
+
     }
 }
-
+console.log(2)
