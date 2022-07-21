@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
         dynamicBullets: true,
+        type: 'progressbar',
     },
 
     // Navigation arrows
@@ -17,10 +18,12 @@ const swiper = new Swiper('.swiper', {
     },
 
     // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-    },
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     draggable: true,
+    // },
+
+
 
     grabCursor: true,
     touchRatio: 1.25,
@@ -34,4 +37,17 @@ const swiper = new Swiper('.swiper', {
     mousewheel: {
         invert: true,
     },
+
+    // autoHeight: true,
+    slidesPerView: 3,
+
+    // spaceBetween: 10,
+
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: true,
+    },
+
+    speed: 800,
 });
+

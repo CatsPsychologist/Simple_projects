@@ -1,7 +1,8 @@
 @import "reset.css";
+
 .swiper {
-    width: 600px;
-    height: 600px;
+    width: 80%;
+    height: 80%;
 }
 
 .swiper-slide{
@@ -27,8 +28,10 @@ img{
     color: black;
 }
 
-.swiper-pagination-bullet{
-    width: 15px;
-    height: 15px;
-    background-color: black;
-}
+
+/*.swiper-pagination-bullet{*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    background-color: black;*/
+/*}*/
+
