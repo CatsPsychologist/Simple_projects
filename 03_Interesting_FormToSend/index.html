@@ -6,6 +6,103 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="wrapper">
+    <div class="form">
+        <form action="#" id="form" class="form_body">
+            <h1 class="form_title">
+                Отправка данных на почту
+            </h1>
+            <div class="form_item">
+                <div class="label form_label">
+                    <label for="formName" class="form_label">
+                        Имя введите вот тут чуть ниже на пару пикселей
+                    </label>
+                    <input id="formName" type="text" name="name" class="form_input _req">
+                </div>
+            </div>
+
+            <div class="form_item" >
+                <label for="formEmail" class="form_label">
+                    Почту сюда
+                </label>
+                <input id="formEmail" type="email" name="name" class="form_input _req _email">
+            </div>
+
+            <div class="form_item">
+                <div class="form_label">
+                    Коты или Собаки?
+                </div>
+                <div class="options">
+                    <div class="options_item">
+                        <input id="formCat" checked type="radio" name="pet" value="cat" class="options_input">
+                        <label for="formCat" class="options_label">
+                            <span>
+                                Коты
+                            </span>
+                        </label>
+                    </div>
+                    <div class="options_item">
+                        <input id="formAlsoCat" type="radio" name="pet" value="cat" class="options_input">
+                        <label for="formAlsoCat" class="options_label">
+                            <span>
+                                Тожекоты
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_item">
+                <label for="formMessage" class="form_label">Сообщение</label>
+                <textarea name="message" id="formMessage"  class="form_input"></textarea>
+            </div>
+
+            <div class="form_item">
+                <div class="form_label">
+                    Возраст
+                </div>
+                <select name="age" class="select">
+                    <option value="18-25" selected>1</option>
+                    <option value="25-45">2</option>
+                    <option value="45-60">3</option>
+                    <option value="60+">4</option>
+                </select>
+            </div>
+
+            <div class="form_item"r>
+                <div class="form_label">
+                    Прикрепить фото
+                </div>
+                <div class="file">
+                    <div class="file_item">
+                        <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+                        <div class="file_button">
+                            Выбрать
+                        </div>
+                    </div>
+                    <div class="file_preview">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_item">
+                <div class="checkbox">
+                    <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input _req">
+                    <label for="formAgreement" class="checkbox_label">
+                        <span>
+                            Я даю свое согласие на обработку данных в соотвествии с <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9_%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD">условием</a>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="form_button">
+                Отправить
+            </button>
+        </form>
+    </div>
+</div>
 
 
 
